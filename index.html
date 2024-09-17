@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Facturación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resumen de Facturación</h1>
+        
+        <div class="factura">
+            <h2>Detalles de la Factura</h2>
+            <p><strong>Total a pagar:</strong> $100.000</p>
+            <p><strong>Fecha de vencimiento:</strong> 30/04/2024</p>
+        </div>
+        
+        <div class="pago">
+            <h2>Información de Pago</h2>
+            <form id="formPago">
+                <label for="metodoPago">Método de pago:</label>
+                <select id="metodoPago" name="metodoPago">
+                    <option value="nequi">Nequi</option>
+                    <option value="tarjeta">Tarjeta de crédito</option>
+                    <option value="transferencia">Transferencia bancaria</option>
+                </select>
+                
+                <div id="nequiInfo" class="hidden">
+                    <p>Número Nequi: 300 123 4567</p>
+                    <p>A nombre de: Empresa XYZ</p>
+                </div>
+                
+                <button type="submit">Confirmar Pago</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

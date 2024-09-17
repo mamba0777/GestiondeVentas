@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: hsl(0, 100%, 50%);
+}
+
+.factura, .pago {
+    background: #ffe600;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, select, button {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: hsl(0, 100%, 50%);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 100%, 40%);
+}
+
+.hidden {
+    display: none;
+}
+
+select {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+/* Añadimos un borde negro a los elementos de la factura para mejorar el contraste */
+.factura p, .pago p {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
